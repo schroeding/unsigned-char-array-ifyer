@@ -5,7 +5,11 @@ endif
 all: 
 	gcc main.c -o uca
 
+windows:
+	x86_64-w64-mingw32-gcc main.c -o uca.exe
+
 clean:
+	rm uca.exe
 	rm uca
 
 install:
